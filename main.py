@@ -13,11 +13,11 @@ from plot_results import *
 
 if __name__ == '__main__':
     # Selects which single-plane file to use
-    pointcloud_idx = 1
+    pointcloud_idx = 7
     #########################################################
     # RANSAC parameters:
-    confidence = 0.85
-    inlier_threshold = 0.02
+    confidence = 0.5
+    inlier_threshold = 0.2
     min_sample_distance = 0.8
     error_functions = [ransac_error, msac_error, mlesac_error]
     error_function_idx = 0
