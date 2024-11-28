@@ -13,11 +13,11 @@ from plot_results import *
 
 if __name__ == '__main__':
     # Selects which single-plane file to use
-    pointcloud_idx = 7
+    pointcloud_idx = 2
     #########################################################
     # RANSAC parameters:
-    confidence = 0.5
-    inlier_threshold = 0.2
+    confidence = 0.85
+    inlier_threshold = 0.02
     min_sample_distance = 0.8
     error_functions = [ransac_error, msac_error, mlesac_error]
     error_function_idx = 0
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     #########################################################
     # Multi-Plane parameters
     multi_plane_names = ['desk', 'door', 'kitchen']
-    multi_plane_idx = 1
+    multi_plane_idx = 0
 
     # RANSAC parameters:
     min_points_prop = 0.04
